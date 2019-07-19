@@ -2,11 +2,11 @@
 <model ref="r:fe8ee6c8-7e5c-4efd-b608-c5ea6827be30(com.mbeddr.mpsutil.graphstream.runtime.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
@@ -3120,7 +3120,6 @@
     </node>
     <node concept="2tJIrI" id="5zrVLV_TRQU" role="jymVt" />
     <node concept="3clFb_" id="1aZIu9YoDKL" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="init" />
       <node concept="3clFbS" id="1aZIu9YoDKO" role="3clF47" />
@@ -3141,7 +3140,6 @@
     </node>
     <node concept="2tJIrI" id="5zrVLV_TROL" role="jymVt" />
     <node concept="3clFb_" id="50Rn4r1MrGZ" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getRenderingTechnology" />
       <node concept="3clFbS" id="50Rn4r1MrH2" role="3clF47" />
@@ -3159,7 +3157,6 @@
     </node>
     <node concept="2tJIrI" id="4G2jA20fBLp" role="jymVt" />
     <node concept="3clFb_" id="50Rn4r1HbzV" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getLayout" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
@@ -3179,7 +3176,6 @@
     </node>
     <node concept="2tJIrI" id="4G2jA20fBJE" role="jymVt" />
     <node concept="3clFb_" id="50Rn4r1HbzR" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getGraph" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
@@ -3209,7 +3205,6 @@
     </node>
     <node concept="2tJIrI" id="4G2jA20fB8$" role="jymVt" />
     <node concept="3clFb_" id="50Rn4r1HbzZ" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getInteractionHandlers" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
@@ -3231,7 +3226,6 @@
     </node>
     <node concept="2tJIrI" id="4G2jA20fBaa" role="jymVt" />
     <node concept="3clFb_" id="50Rn4r1Hb$4" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getToolbarContribution" />
       <node concept="3clFbS" id="50Rn4r1Hb$5" role="3clF47" />
@@ -3249,7 +3243,6 @@
     </node>
     <node concept="2tJIrI" id="5zrVLV_TRNI" role="jymVt" />
     <node concept="3clFb_" id="7nFmMse05VJ" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="toolCreated" />
       <node concept="3clFbS" id="7nFmMse05VM" role="3clF47" />
@@ -3265,7 +3258,6 @@
     </node>
     <node concept="2tJIrI" id="4G2jA20fBZG" role="jymVt" />
     <node concept="3clFb_" id="5zrVLV_TRYW" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="refresh" />
       <node concept="3clFbS" id="5zrVLV_TRYZ" role="3clF47" />
@@ -3508,7 +3500,7 @@
               <ref role="3cqZAo" node="6x5UxX30db6" resolve="_canvas" />
             </node>
             <node concept="liA8E" id="6x5UxX30HZV" role="2OqNvi">
-              <ref role="37wK5l" to="41rc:~AbstractJGVTComponent.resetRenderingTransform():void" resolve="resetRenderingTransform" />
+              <ref role="37wK5l" to="41rc:~JGVTComponent.resetRenderingTransform():void" resolve="resetRenderingTransform" />
             </node>
           </node>
         </node>
@@ -4212,7 +4204,7 @@
                 <ref role="3cqZAo" node="6x5UxX30db6" resolve="_canvas" />
               </node>
               <node concept="liA8E" id="2sPLpCfQKIa" role="2OqNvi">
-                <ref role="37wK5l" to="41rc:~AbstractJGVTComponent.getGraphicsNode():org.apache.batik.gvt.GraphicsNode" resolve="getGraphicsNode" />
+                <ref role="37wK5l" to="41rc:~JGVTComponent.getGraphicsNode():org.apache.batik.gvt.GraphicsNode" resolve="getGraphicsNode" />
               </node>
             </node>
           </node>
@@ -4229,7 +4221,7 @@
             </node>
             <node concept="2OqwBi" id="2sPLpCfQKIg" role="33vP2m">
               <node concept="liA8E" id="2sPLpCfQKIi" role="2OqNvi">
-                <ref role="37wK5l" to="41rc:~AbstractJGVTComponent.getRenderingTransform():java.awt.geom.AffineTransform" resolve="getRenderingTransform" />
+                <ref role="37wK5l" to="41rc:~JGVTComponent.getRenderingTransform():java.awt.geom.AffineTransform" resolve="getRenderingTransform" />
               </node>
               <node concept="37vLTw" id="6x5UxX30rTb" role="2Oq$k0">
                 <ref role="3cqZAo" node="6x5UxX30db6" resolve="_canvas" />
@@ -4370,7 +4362,7 @@
             <node concept="3clFbF" id="2sPLpCfQKJ2" role="3cqZAp">
               <node concept="2OqwBi" id="2sPLpCfQKJ3" role="3clFbG">
                 <node concept="liA8E" id="2sPLpCfQKJ5" role="2OqNvi">
-                  <ref role="37wK5l" to="41rc:~AbstractJGVTComponent.setRenderingTransform(java.awt.geom.AffineTransform):void" resolve="setRenderingTransform" />
+                  <ref role="37wK5l" to="41rc:~JGVTComponent.setRenderingTransform(java.awt.geom.AffineTransform):void" resolve="setRenderingTransform" />
                   <node concept="37vLTw" id="2sPLpCfQKJ6" role="37wK5m">
                     <ref role="3cqZAo" node="2sPLpCfQKHN" resolve="t" />
                   </node>

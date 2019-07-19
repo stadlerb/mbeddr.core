@@ -7,7 +7,7 @@
     <use id="58f98fef-90ad-4b72-a390-fad66ec7005a" name="jetbrains.mps.core.properties" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="-1" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
     <use id="d5033cee-f632-44b6-b308-89d4fbde34ff" name="jetbrains.mps.build.startup" version="-1" />
   </languages>
   <imports>
@@ -205,13 +205,16 @@
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
+        <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
+      <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
       <concept id="781140262677906392" name="jetbrains.mps.build.mps.structure.BuildMps_BrandingCompany" flags="ng" index="IuM$Q">
         <child id="781140262677906402" name="url" index="IuM$c" />
         <child id="781140262677906401" name="name" index="IuM$f" />
+        <child id="2355727383336213970" name="copyrightStar" index="3fQQh0" />
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
@@ -242,13 +245,14 @@
         <child id="6845119683729280452" name="icon" index="27igRh" />
         <child id="7962467864632399185" name="progressX" index="2gocG4" />
         <child id="7962467864633062782" name="progressHeight" index="2gqIGF" />
+        <child id="922958177840117051" name="script" index="2gvbiD" />
         <child id="6108265972537182997" name="aboutScreen" index="2EqU2s" />
         <child id="6108265972537182996" name="splashScreen" index="2EqU2t" />
         <child id="6108265972537229337" name="buildNumber" index="2EteIg" />
         <child id="6108265972537229339" name="icon16" index="2EteIi" />
         <child id="6108265972537229338" name="icon32" index="2EteIj" />
         <child id="6108265972537335245" name="updateWebsite" index="2Etnp4" />
-        <child id="6108265972537372847" name="shortName" index="2EtHGA" />
+        <child id="6108265972537372847" name="product" index="2EtHGA" />
         <child id="6108265972537372848" name="fullName" index="2EtHGT" />
         <child id="8795525031433238889" name="textColor" index="HFo83" />
         <child id="781140262677914381" name="company" index="IuKBz" />
@@ -1791,7 +1795,7 @@
       <node concept="aVJcg" id="6hnvgFycl60" role="aVJcv">
         <node concept="NbPM2" id="6hnvgFycl61" role="aVJcq">
           <node concept="3Mxwew" id="5wLtKNeUYBj" role="3MwsjC">
-            <property role="3MwjfP" value="MPS-181." />
+            <property role="3MwjfP" value="MPS-182." />
           </node>
           <node concept="3Mxwey" id="32YXDrSqvWF" role="3MwsjC">
             <ref role="3Mxwex" node="32YXDrSqvS3" resolve="mbeddr.buildNumber" />
@@ -1924,8 +1928,8 @@
     </node>
     <node concept="1zClus" id="1BPeV_LjXsL" role="3989C9">
       <property role="TrG5h" value="MPS" />
-      <property role="2OjLBL" value="2017" />
-      <property role="2OjLBK" value="3" />
+      <property role="2OjLBL" value="2018" />
+      <property role="2OjLBK" value="2" />
       <property role="1lNJF1" value="0" />
       <node concept="3_J27D" id="1BPeV_LjXsM" role="HFo83">
         <node concept="3Mxwew" id="1BPeV_LjXsN" role="3MwsjC">
@@ -1941,6 +1945,11 @@
         <node concept="3_J27D" id="1BPeV_LjXsR" role="IuM$c">
           <node concept="3Mxwew" id="1BPeV_LjXsS" role="3MwsjC">
             <property role="3MwjfP" value="http://mbeddr.com" />
+          </node>
+        </node>
+        <node concept="NbPM2" id="13EXNGXL4ql" role="3fQQh0">
+          <node concept="3Mxwew" id="13EXNGXL4qk" role="3MwsjC">
+            <property role="3MwjfP" value="*" />
           </node>
         </node>
       </node>
@@ -2114,6 +2123,11 @@
           <node concept="3Mxwew" id="1BPeV_LjXtW" role="3MwsjC">
             <property role="3MwjfP" value="mbeddr" />
           </node>
+        </node>
+      </node>
+      <node concept="3_J27D" id="76N1O$Kj6vh" role="2gvbiD">
+        <node concept="3Mxwew" id="76N1O$Kj6vi" role="3MwsjC">
+          <property role="3MwjfP" value="mbeddr" />
         </node>
       </node>
     </node>
@@ -2454,7 +2468,7 @@
       <node concept="aVJcg" id="jueD0WYgWx" role="aVJcv">
         <node concept="NbPM2" id="jueD0WYgWy" role="aVJcq">
           <node concept="3Mxwew" id="jueD0WYgWz" role="3MwsjC">
-            <property role="3MwjfP" value="MPS-173." />
+            <property role="3MwjfP" value="MPS-182." />
           </node>
           <node concept="3Mxwey" id="jueD0WYgW$" role="3MwsjC">
             <ref role="3Mxwex" node="jueD0WYgWs" resolve="mbeddr.buildNumber" />
@@ -2555,7 +2569,7 @@
             </node>
           </node>
           <node concept="1zDrgl" id="1BPeV_LjXvw" role="39821P">
-            <ref role="1zDrgn" node="1BPeV_LjXsL" resolve="mbeddr IDE 2017.3" />
+            <ref role="1zDrgn" node="1BPeV_LjXsL" resolve="mbeddr IDE 2018.2" />
           </node>
           <node concept="28jJK3" id="7FHOzp5h07H" role="39821P">
             <node concept="398BVA" id="7FHOzp5h081" role="28jJRO">
@@ -2664,6 +2678,7 @@
       <node concept="398223" id="1BPeV_LjXvG" role="39821P">
         <node concept="m$_wl" id="4LNFdiVWL4L" role="39821P">
           <ref role="m_rDy" node="4LNFdiVWIZJ" resolve="com.mbeddr.rcp.actions" />
+          <node concept="pUk6x" id="76N1O$Kj6v5" role="pUk7w" />
         </node>
         <node concept="3ygNvl" id="32YXDrSql99" role="39821P">
           <ref role="3ygNvj" to="ffeo:3IKDaVZn4nh" resolve="plugins" />
@@ -2788,6 +2803,9 @@
         </node>
       </node>
       <node concept="2HvfSZ" id="5FIs3IeHRpb" role="39821P">
+        <node concept="3LWZYq" id="13EXNGXLNQH" role="2HvfZ1">
+          <property role="3LWZYl" value="**/vcs.xml" />
+        </node>
         <node concept="398BVA" id="5FIs3IeHRqX" role="2HvfZ0">
           <ref role="398BVh" node="1BPeV_LjXqL" resolve="artifacts.root" />
           <node concept="2Ry0Ak" id="5FIs3IeHRr8" role="iGT6I">

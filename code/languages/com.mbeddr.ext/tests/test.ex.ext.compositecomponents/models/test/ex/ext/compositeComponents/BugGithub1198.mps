@@ -46,6 +46,7 @@
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="7883182368027992003" name="removeUnusedRequiredPorts" index="2$yeXr" />
         <property id="1553713790141527405" name="wireStatically" index="35zhco" />
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
         <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
@@ -96,13 +97,10 @@
         <child id="7755897872837031764" name="expected" index="2N2GHh" />
       </concept>
       <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
-        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
-      </concept>
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="54f2a59b-97bb-4c09-af92-928ebf9c5966" name="com.mbeddr.ext.compositecomponents">
       <concept id="7780999115924218270" name="com.mbeddr.ext.compositecomponents.structure.DelegatingConnector" flags="ng" index="5GgzA">
@@ -476,6 +474,7 @@
       <node concept="3i3YCL" id="6AXziRbP69l" role="3i30U9">
         <property role="3Ewwow" value="true" />
         <property role="35zhco" value="true" />
+        <property role="2$yeXr" value="true" />
         <ref role="35zhcq" node="6AXziRbMy7I" resolve="instances" />
       </node>
     </node>
@@ -487,9 +486,7 @@
         <ref role="2v9HqP" node="6AXziRbMrgU" resolve="BugGithub1198" />
       </node>
     </node>
-    <node concept="12mU2y" id="5B69dDbeJAy" role="2Q9xDr">
-      <node concept="3GpDuo" id="5B69dDbeJAz" role="3GpDut" />
-    </node>
+    <node concept="12mU2y" id="5B69dDbeJAy" role="2Q9xDr" />
   </node>
 </model>
 

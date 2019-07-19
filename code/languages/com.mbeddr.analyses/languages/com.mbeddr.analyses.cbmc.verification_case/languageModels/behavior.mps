@@ -2,14 +2,14 @@
 <model ref="r:420130db-9df9-482f-8f34-71bae62e8600(com.mbeddr.analyses.cbmc.verification_case.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -73,6 +73,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -80,6 +81,7 @@
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -261,7 +263,7 @@
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getContributedLocalVariables" />
       <property role="2Ki8OM" value="false" />
-      <ref role="13i0hy" to="rj8d:1OcdQnyTC1X" resolve="getContributedLocalVariables" />
+      <ref role="13i0hy" to="rj8d:3LB9aGm4C$b" resolve="getContributedLocalVariables" />
       <node concept="3clFbS" id="HiHa_$l5OH" role="3clF47">
         <node concept="3cpWs8" id="HiHa_$lzI9" role="3cqZAp">
           <node concept="3cpWsn" id="HiHa_$lzIa" role="3cpWs9">
@@ -314,12 +316,16 @@
           </node>
         </node>
       </node>
-      <node concept="A3Dl8" id="HiHa_$l5OV" role="3clF45">
-        <node concept="3Tqbb2" id="HiHa_$l5OW" role="A3Ik2">
+      <node concept="3Tm1VV" id="HiHa_$l5OX" role="1B3o_S" />
+      <node concept="37vLTG" id="2Q1X$ydEKSe" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="2Q1X$ydEKSf" role="1tU5fm" />
+      </node>
+      <node concept="A3Dl8" id="2Q1X$ydEKSg" role="3clF45">
+        <node concept="3Tqbb2" id="2Q1X$ydEKSh" role="A3Ik2">
           <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
         </node>
       </node>
-      <node concept="3Tm1VV" id="HiHa_$l5OX" role="1B3o_S" />
     </node>
     <node concept="13i0hz" id="HiHa_$lFMR" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -348,7 +354,7 @@
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getContributedLocalVariables" />
       <property role="2Ki8OM" value="false" />
-      <ref role="13i0hy" to="rj8d:1OcdQnyTC1X" resolve="getContributedLocalVariables" />
+      <ref role="13i0hy" to="rj8d:3LB9aGm4C$b" resolve="getContributedLocalVariables" />
       <node concept="3clFbS" id="2L0t9wJsSVR" role="3clF47">
         <node concept="3cpWs8" id="2L0t9wJsT2N" role="3cqZAp">
           <node concept="3cpWsn" id="2L0t9wJsT2Q" role="3cpWs9">
@@ -381,12 +387,16 @@
           </node>
         </node>
       </node>
-      <node concept="A3Dl8" id="HiHa_$jOPj" role="3clF45">
-        <node concept="3Tqbb2" id="HiHa_$jOPk" role="A3Ik2">
+      <node concept="3Tm1VV" id="HiHa_$jOPl" role="1B3o_S" />
+      <node concept="37vLTG" id="2Q1X$ydEHAM" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="2Q1X$ydEHAN" role="1tU5fm" />
+      </node>
+      <node concept="A3Dl8" id="2Q1X$ydEHAO" role="3clF45">
+        <node concept="3Tqbb2" id="2Q1X$ydEHAP" role="A3Ik2">
           <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
         </node>
       </node>
-      <node concept="3Tm1VV" id="HiHa_$jOPl" role="1B3o_S" />
     </node>
     <node concept="13i0hz" id="7Kh7qAAdEgJ" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -666,7 +676,7 @@
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getContributedLocalVariables" />
       <property role="2Ki8OM" value="false" />
-      <ref role="13i0hy" to="rj8d:1OcdQnyTC1X" resolve="getContributedLocalVariables" />
+      <ref role="13i0hy" to="rj8d:3LB9aGm4C$b" resolve="getContributedLocalVariables" />
       <node concept="3clFbS" id="HiHa_$jdN$" role="3clF47">
         <node concept="3clFbF" id="HiHa_$jfFC" role="3cqZAp">
           <node concept="2OqwBi" id="HiHa_$jpxp" role="3clFbG">
@@ -696,8 +706,11 @@
                       <node concept="37vLTw" id="HiHa_$jqCK" role="2Oq$k0">
                         <ref role="3cqZAo" node="HiHa_$jqxd" resolve="it" />
                       </node>
-                      <node concept="2qgKlT" id="HiHa_$jrJl" role="2OqNvi">
-                        <ref role="37wK5l" to="rj8d:1OcdQnyTC1X" resolve="getContributedLocalVariables" />
+                      <node concept="2qgKlT" id="2Q1X$ydEJHv" role="2OqNvi">
+                        <ref role="37wK5l" to="rj8d:3LB9aGm4C$b" resolve="getContributedLocalVariables" />
+                        <node concept="37vLTw" id="2Q1X$ydEKar" role="37wK5m">
+                          <ref role="3cqZAo" node="2Q1X$ydEI$v" resolve="node" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -711,12 +724,16 @@
           </node>
         </node>
       </node>
-      <node concept="A3Dl8" id="HiHa_$jKRa" role="3clF45">
-        <node concept="3Tqbb2" id="HiHa_$jKRb" role="A3Ik2">
+      <node concept="3Tm1VV" id="HiHa_$jKRc" role="1B3o_S" />
+      <node concept="37vLTG" id="2Q1X$ydEI$v" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="2Q1X$ydEI$w" role="1tU5fm" />
+      </node>
+      <node concept="A3Dl8" id="2Q1X$ydEI$x" role="3clF45">
+        <node concept="3Tqbb2" id="2Q1X$ydEI$y" role="A3Ik2">
           <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
         </node>
       </node>
-      <node concept="3Tm1VV" id="HiHa_$jKRc" role="1B3o_S" />
     </node>
     <node concept="13hLZK" id="HiHa_$jdME" role="13h7CW">
       <node concept="3clFbS" id="HiHa_$jdMF" role="2VODD2" />

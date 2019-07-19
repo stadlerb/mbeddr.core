@@ -23,6 +23,7 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -398,7 +399,7 @@
     <property role="3GE5qa" value="asserts" />
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="7755897872837031762" />
-    <ref role="1TJDcQ" node="1Rr52SXzYA6" resolve="TestSpecificStatement" />
+    <ref role="1TJDcQ" node="6GAl_xx8rPW" resolve="AbstractStructuredBinOpAssertStatement" />
     <node concept="1TJgyj" id="6Iyv0noEbtk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expected" />
@@ -412,9 +413,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="7755897872837031765" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="6Iyv0noEK$a" role="PzmwI">
-      <ref role="PrY4T" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
     </node>
     <node concept="PrWs8" id="3JtoPqpBal3" role="PzmwI">
       <ref role="PrY4T" to="mj1l:7oI7FI6oqPw" resolve="IInitializationContext" />
@@ -484,7 +482,7 @@
   </node>
   <node concept="1TIwiD" id="7tWSY$P9Odb">
     <property role="TrG5h" value="TestCaseConfigItem" />
-    <property role="34LRSv" value="unittest" />
+    <property role="34LRSv" value="unit testing" />
     <property role="3GE5qa" value="configItem" />
     <property role="EcuMT" value="8610007178384196427" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -493,6 +491,7 @@
       <property role="20kJfa" value="testStrategy" />
       <property role="IQ2ns" value="842732463503928104" />
       <ref role="20lvS9" node="ILZbnBPQGB" resolve="ITestStrategy" />
+      <node concept="asaX9" id="7BqFpRy4s0W" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="7tWSY$P9Oes" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
@@ -554,6 +553,7 @@
     <property role="TrG5h" value="ITestStrategy" />
     <property role="3GE5qa" value="configItem" />
     <property role="EcuMT" value="842732463503928103" />
+    <node concept="asaX9" id="7BqFpRy4s0Y" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="ILZbnBPQGE">
     <property role="TrG5h" value="NoTestIsolationStrategy" />
@@ -564,6 +564,7 @@
     <node concept="PrWs8" id="ILZbnBPQGF" role="PzmwI">
       <ref role="PrY4T" node="ILZbnBPQGB" resolve="ITestStrategy" />
     </node>
+    <node concept="asaX9" id="7BqFpRy4EOE" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="ILZbnBPQGH">
     <property role="TrG5h" value="TestIsolationStrategy" />
@@ -574,9 +575,7 @@
     <node concept="PrWs8" id="ILZbnBPQGI" role="PzmwI">
       <ref role="PrY4T" node="ILZbnBPQGB" resolve="ITestStrategy" />
     </node>
-    <node concept="PrWs8" id="38aMGlgud8N" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:38aMGlgu7TQ" resolve="INoDebugSupport" />
-    </node>
+    <node concept="asaX9" id="7BqFpRy4EOG" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="7nMAuIoMgjE">
     <property role="TrG5h" value="TestCollectionRef" />
@@ -591,6 +590,60 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8499024683961222381" />
       <ref role="20lvS9" node="6TAwvhVRBLA" resolve="TestCollection" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6On3mjUaIW2">
+    <property role="TrG5h" value="IgnoreAnnotation" />
+    <property role="EcuMT" value="7860766401943498498" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="PrWs8" id="6On3mjUaIW5" role="PzmwI">
+      <ref role="PrY4T" node="3Rzs0kGBKjV" resolve="IRequireUnitTestFramework" />
+    </node>
+    <node concept="M6xJ_" id="6On3mjUaIW6" role="lGtFl">
+      <property role="Hh88m" value="ignore" />
+      <node concept="trNpa" id="6On3mjUaIW8" role="EQaZv">
+        <ref role="trN6q" node="5so5TTr6RXr" resolve="TestCase" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6GAl_xvYY1K">
+    <property role="3GE5qa" value="asserts" />
+    <property role="TrG5h" value="AssertNotNull" />
+    <property role="34LRSv" value="assert-not-null" />
+    <property role="R4oN_" value="assert actual != NULL" />
+    <property role="EcuMT" value="7720953548740747376" />
+    <ref role="1TJDcQ" node="6GAl_xx5lmY" resolve="StructuredNullOpAssertStatement" />
+  </node>
+  <node concept="1TIwiD" id="6GAl_xvZkPg">
+    <property role="3GE5qa" value="asserts" />
+    <property role="TrG5h" value="AssertNull" />
+    <property role="34LRSv" value="assert-null" />
+    <property role="R4oN_" value="assert actual == NULL" />
+    <property role="EcuMT" value="7720953548740840784" />
+    <ref role="1TJDcQ" node="6GAl_xx5lmY" resolve="StructuredNullOpAssertStatement" />
+  </node>
+  <node concept="1TIwiD" id="6GAl_xx5lmY">
+    <property role="3GE5qa" value="asserts" />
+    <property role="TrG5h" value="StructuredNullOpAssertStatement" />
+    <property role="EcuMT" value="7720953548759193022" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="6GAl_xx8rPW" resolve="AbstractStructuredBinOpAssertStatement" />
+    <node concept="1TJgyj" id="6GAl_xx5lmZ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actual" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="7720953548759193023" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6GAl_xx8rPW">
+    <property role="TrG5h" value="AbstractStructuredBinOpAssertStatement" />
+    <property role="3GE5qa" value="asserts" />
+    <property role="R5$K7" value="true" />
+    <property role="EcuMT" value="7720953548760006012" />
+    <ref role="1TJDcQ" node="1Rr52SXzYA6" resolve="TestSpecificStatement" />
+    <node concept="PrWs8" id="6GAl_xx8rPZ" role="PzmwI">
+      <ref role="PrY4T" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
     </node>
   </node>
 </model>

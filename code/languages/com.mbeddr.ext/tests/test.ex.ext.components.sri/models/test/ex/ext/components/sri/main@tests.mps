@@ -2,18 +2,18 @@
 <model ref="r:52866a3c-8785-4dad-980b-138bac1d2189(test.ex.ext.components.sri.main@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
-    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="0" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="2" />
+    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="41911c23-eb23-4ee6-872f-bc7f7ebce290" name="com.mbeddr.ext.components.test" version="0" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="2" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="4" />
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="4" />
   </languages>
   <imports />
   <registry>
@@ -79,7 +79,9 @@
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="7883182368027992003" name="removeUnusedRequiredPorts" index="2$yeXr" />
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
+        <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
       </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
@@ -156,13 +158,10 @@
         <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
-        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
-      </concept>
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
-      <concept id="842732463503928106" name="com.mbeddr.core.unittest.structure.NoTestIsolationStrategy" flags="ng" index="3GpDuv" />
     </language>
     <language id="41911c23-eb23-4ee6-872f-bc7f7ebce290" name="com.mbeddr.ext.components.test">
       <concept id="8230733038424928674" name="com.mbeddr.ext.components.test.structure.DirectRunnableCall" flags="ng" index="1AmG6P">
@@ -224,9 +223,6 @@
       <concept id="4491876417845628840" name="com.mbeddr.ext.components.structure.ProvidedPort" flags="ng" index="2EWHp_" />
       <concept id="4491876417845484930" name="com.mbeddr.ext.components.structure.Port" flags="ng" index="2EX0hf">
         <reference id="4491876417845484932" name="intf" index="2EX0h9" />
-      </concept>
-      <concept id="4491876417845484919" name="com.mbeddr.ext.components.structure.Interface" flags="ng" index="2EX0iU">
-        <property id="1539255704408883009" name="canBeUsedAsType" index="1M_7uD" />
       </concept>
       <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
@@ -317,6 +313,8 @@
     <node concept="3i2$bm" id="RsLjUnNRZe" role="2Q9xDr">
       <node concept="3i3YCL" id="RsLjUnNRZg" role="3i30U9">
         <property role="3Ewwow" value="true" />
+        <property role="2$yeXr" value="true" />
+        <ref role="35zhcq" node="1PvAkX2sqti" resolve="SrTestConfig" />
       </node>
     </node>
     <node concept="2eOfOl" id="RsLjUnMNv2" role="2ePNbc">
@@ -327,9 +325,7 @@
         <ref role="2v9HqP" node="RsLjUnMNu5" resolve="TestSenderReceiver" />
       </node>
     </node>
-    <node concept="12mU2y" id="5B69dDbeJIj" role="2Q9xDr">
-      <node concept="3GpDuv" id="4WC4fmOOGnN" role="3GpDut" />
-    </node>
+    <node concept="12mU2y" id="5B69dDbeJIj" role="2Q9xDr" />
   </node>
   <node concept="N3F5e" id="RsLjUnMNu5">
     <property role="TrG5h" value="TestSenderReceiver" />
@@ -338,7 +334,6 @@
     </node>
     <node concept="2q5ZbU" id="RsLjUnOBWn" role="N3F5h">
       <property role="TrG5h" value="CarType" />
-      <property role="1M_7uD" value="false" />
       <property role="2OOxQR" value="true" />
       <node concept="2q5ZbO" id="RsLjUnOBWo" role="2q5ZbA">
         <property role="TrG5h" value="id" />
@@ -350,7 +345,6 @@
     </node>
     <node concept="2q5ZbU" id="6Ywynt2TUkx" role="N3F5h">
       <property role="TrG5h" value="CarPositions" />
-      <property role="1M_7uD" value="false" />
       <property role="2OOxQR" value="true" />
       <node concept="2q5ZbO" id="6Ywynt2TUky" role="2q5ZbA">
         <property role="TrG5h" value="poses" />
@@ -398,7 +392,6 @@
     <node concept="2q5ZbU" id="RsLjUnNb$Z" role="N3F5h">
       <property role="TrG5h" value="CarData" />
       <property role="2OOxQR" value="true" />
-      <property role="1M_7uD" value="true" />
       <property role="XP9xe" value="true" />
       <node concept="2q5ZbO" id="RsLjUnNu$7" role="2q5ZbA">
         <property role="TrG5h" value="drehzahl" />

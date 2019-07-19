@@ -47,6 +47,7 @@
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="7883182368027992003" name="removeUnusedRequiredPorts" index="2$yeXr" />
         <property id="1553713790141527405" name="wireStatically" index="35zhco" />
         <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
       </concept>
@@ -92,13 +93,10 @@
         <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
-      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
-        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
-      </concept>
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y" />
       <concept id="5686538669182340985" name="com.mbeddr.core.unittest.structure.TestCaseRef" flags="ng" index="3cM6IN">
         <reference id="5686538669182340986" name="testcase" index="3cM6IK" />
       </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -284,12 +282,11 @@
     <node concept="3i2$bm" id="ybcgwyvEFa" role="2Q9xDr">
       <node concept="3i3YCL" id="ybcgwyvEFi" role="3i30U9">
         <property role="35zhco" value="true" />
+        <property role="2$yeXr" value="true" />
         <ref role="35zhcq" node="ybcgwyvE9S" resolve="myInstances" />
       </node>
     </node>
-    <node concept="12mU2y" id="ybcgwyvFaX" role="2Q9xDr">
-      <node concept="3GpDuo" id="ybcgwyvFaY" role="3GpDut" />
-    </node>
+    <node concept="12mU2y" id="ybcgwyvFaX" role="2Q9xDr" />
     <node concept="2Q9Fgs" id="ybcgwyvEFl" role="2Q9xDr">
       <node concept="2Q9FjX" id="ybcgwyvEFm" role="2Q9FjI" />
     </node>
